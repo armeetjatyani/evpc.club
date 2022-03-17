@@ -8,7 +8,7 @@ const Navbar = () => {
 					<h1 className="font-mono text-xl font-black select-none">@evpc</h1>
 				</div>
 				<div className="flex font-mono font-bold">
-					{process.env.NODE_ENV === "production" ? (
+					{/* {process.env.NODE_ENV === "production" ? (
 						<>
 							<a href="./index.html" className="px-4 py-1 transition-all duration-300 rounded-lg hover:bg-gray-700 hover:scale-105">
 								Home
@@ -26,7 +26,13 @@ const Navbar = () => {
 								<a className="px-4 py-1 transition-all duration-300 rounded-lg hover:bg-gray-700 hover:scale-105">Agendas</a>
 							</Link>
 						</>
-					)}
+					)} */}
+					<Link href="/" passHref>
+						<a className="px-4 py-1 transition-all duration-300 rounded-lg hover:bg-gray-700 hover:scale-105">Home</a>
+					</Link>
+					<Link href="/agendas" passHref>
+						<a className="px-4 py-1 transition-all duration-300 rounded-lg hover:bg-gray-700 hover:scale-105">Agendas</a>
+					</Link>
 				</div>
 			</nav>
 		</div>
