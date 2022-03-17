@@ -1,13 +1,9 @@
-import Head from "next/head";
+import Header from "../components/Header";
 
 export default function Home() {
 	return (
 		<div className="flex flex-col items-center w-full">
-			<Head>
-				<title>@evpc</title>
-				<meta name="description" content="Evergreen Valley High School Programming Club" />
-				<link rel="icon" href="../public/img/logo.png" />
-			</Head>
+			<Header />
 
 			{/* Main Content */}
 			<main className="w-[70%] h-[700px] md:h-[550px] flex flex-col space-y-4 items-center justify-center">
