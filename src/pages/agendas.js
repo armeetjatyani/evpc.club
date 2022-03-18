@@ -29,10 +29,10 @@ const Agendas = () => {
 								</div>
 							)}
 
-							<div className="flex space-x-2">
+							<div className="flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-2">
 								{agenda.extraLinks.map((link) => {
 									return (
-										<a href={link.path} key={link.name} target="_blank" rel="noreferrer" className="w-fit px-4 flex items-center justify-center space-x-2 bg-purple-300 text-gray-800 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg">
+										<a href={link.path} key={link.name} target="_blank" rel="noreferrer" className="flex items-center justify-center px-4 space-x-2 text-gray-800 transition-all duration-300 bg-purple-300 rounded-lg w-fit hover:scale-105 hover:shadow-lg">
 											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
 												<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
 												<polyline points="15 3 21 3 21 9"></polyline>
