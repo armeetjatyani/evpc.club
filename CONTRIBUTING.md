@@ -8,8 +8,10 @@
 7. Make necessary changes (see position specific procedure below to see how to update agendas, members, officers, etc.)
 8. Once all changes are made cd (change directory) to the `/` folder
 9. Type `git add .` in the terminal
-10. Type `git commit -m "Message here, Example: added agenda for 3/17/22"
+10. Type `git commit -m "Message here, Example: added agenda for 3/17/22"`
 11. Type `git push`
+12. Go to `github.com` and open up your forked repo. You should see a create pull request button. Click that to start a new pull request.
+13. Fill out the necessary fields and submit the PR. Once the PR is accepted and merged into the repo, the site will automatically redeploy to `www.evpc.club`
 
 # Secretary Procedure
 The secretary is in charge of keeping the agenda up-to-date.<br>
