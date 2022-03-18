@@ -12,6 +12,7 @@
 11. Type `git push`
 12. Go to `github.com` and open up your forked repo. You should see a create pull request button. Click that to start a new pull request.
 13. Fill out the necessary fields and submit the PR. Once the PR is accepted and merged into the repo, the site will automatically redeploy to `www.evpc.club`
+14. Once the PR has been accepted, your can delete your forked repo.
 
 # Secretary Procedure
 The secretary is in charge of keeping the agenda up-to-date.<br>
