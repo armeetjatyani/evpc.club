@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import agendas from "../data/agendas";
+import { motion } from "framer-motion";
 
 const Agendas = () => {
 	return (
@@ -7,9 +8,9 @@ const Agendas = () => {
 			<Header />
 			<div className="w-[90%] sm:w-[70%] space-y-8">
 				<h1 className="text-3xl font-black">Agendas</h1>
-				{agendas.map((agenda) => {
+				{agendas.map((agenda, index) => {
 					return (
-						<a key={agenda.date} href={agenda.link} target="_blank" rel="noreferrer" className="block p-6 space-y-4 transition-all duration-300 rounded-2xl hover:bg-gray-800 hover:shadow-lg ring-violet-400 ring-1">
+						<motion.a initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ delay: index * 0.2 }} key={agenda.date} href={agenda.link} target="_blank" rel="noreferrer" className="block p-6 space-y-4 transition-colors duration-300 rounded-2xl hover:bg-gray-800 hover:shadow-lg ring-violet-400 ring-2">
 							<div className="flex items-center space-x-4">
 								<h2 className="text-lg font-black underline">{agenda.date}</h2>
 								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -43,7 +44,7 @@ const Agendas = () => {
 									);
 								})}
 							</div>
-						</a>
+						</motion.a>
 					);
 				})}
 			</div>
