@@ -4,12 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "export" : "next build && next export -o ../docs",
+    "export": "next build && next export -o ../docs",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.6",
     "next": "12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2"
