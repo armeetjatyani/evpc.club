@@ -36,6 +36,12 @@ const agendas = [
         link: "",
 		extraLinks: [{ name: "Attendance", path: "https://tinyurl.com/attendevpc", }],
         attendance: 20,
+	},{
+		date: "September 24th, 2021",
+        summary: "Introduction Meeting. Go over member requirements and what we do in the programming club.",
+        link: "",
+		extraLinks: [{ name: "Attendance", path: "https://tinyurl.com/attendevpc", name: "BIT Sheet", path: "https://docs.google.com/spreadsheets/d/1hQXmBSCOH0dZB9IoTNEEzsJ9TcBFSNii6Biah8u_e80/edit?usp=sharing"}],
+        attendance: 42,
 	}
 ];
 
