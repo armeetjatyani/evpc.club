@@ -36,6 +36,9 @@ const Navbar = () => {
 					<Link href="/agendas" passHref>
 						<a className="px-3 py-1 transition-all duration-300 rounded-lg hover:bg-violet-400 hover:text-gray-800 hover:scale-105">Agendas</a>
 					</Link>
+					<Link href="/bitsheet" passHref>
+						<a className="px-3 py-1 transition-all duration-300 rounded-lg hover:bg-violet-400 hover:text-gray-800 hover:scale-105">BIT Sheet</a>
+					</Link>
 					<Link href="/members" passHref>
 						<a className="px-3 py-1 transition-all duration-300 rounded-lg hover:bg-violet-400 hover:text-gray-800 hover:scale-105">Members</a>
 					</Link>
